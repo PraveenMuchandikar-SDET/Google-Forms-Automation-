@@ -119,4 +119,5 @@ public class GoogleFormPage {
         formSubmissionMsg.isDisplayed();
         return true;
     }
+
 }
