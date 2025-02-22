@@ -62,6 +62,7 @@ public class TestCases {
         System.out.println("Start Test Case 01");
         Wrappers.navigate(driver, "https://docs.google.com/forms/d/e/1FAIpQLSep9LTMntH5YqIXa5nkiPKSs283kdwitBBhXWyZdAS-e4CxBQ/viewform");
 
+        //Fill the form and submit
         formPage.enterName("Crio Learner");
         formPage.enterReason("I want to be the best QA Engineer! ");
         formPage.selectExperience("3 - 5");

@@ -1,0 +1,43 @@
+Google Form Automation Test Suite
+
+Overview
+This project automates the process of filling out and submitting a Google Form using Selenium WebDriver. The automation includes handling form fields like text boxes, radio buttons, checkboxes, dropdowns, and date/time pickers.
+
+Features Implemented
+Google Form Submission Tests
+│── Navigate to the Google Form URL.
+│── Enter user details such as name, reason, and experience.
+│── Select multiple tools from checkboxes.
+│── Choose a pronoun from radio button options.
+│── Enter date and time dynamically.
+│── Submit the form and verify successful submission.
+
+Project Structure
+Project Root
+│── src/main/java/demo (Application source code)
+│── src/test/java/demo (Test cases and automation scripts)
+│── ExtentReports (Test reports generated after execution)
+│── src/test/java/resources (textng.xml.)
+│── build.gradle (Gradle dependencies and configuration)
+
+Prerequisites
+Before running the test suite, ensure you have the following installed:
+Java 11+
+Gradle
+Selenium WebDriver
+TestNG
+Browser Drivers (ChromeDriver, etc.)
+
+How to Execute the Tests
+Using Gradle
+│── Navigate to the project directory.
+│── Run the following command to execute all test cases:
+│── ./gradlew test
+    
+
+Test Reports
+After execution, test reports are available in:
+Gradle Reports: build/reports/tests/test/index.html
+
+Contributors
+Praveen Muchandikar

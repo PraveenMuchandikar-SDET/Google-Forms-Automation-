@@ -29,7 +29,7 @@ public class GoogleFormPage {
     @FindBy(xpath = "//textarea[@class='KHxj8b tL9Q4c']")
     public WebElement reasonTextArea;
 
-    @FindBy(xpath = "//span[@class='aDTYNe snByac OvPDhc OIC90c']")
+    @FindBy(xpath = "//span[@class='aDTYNe snByac OvPDhc OIC90c']") ////span[contains(@class,'OvPDhc')]
     public List<WebElement> expRadioBtnList;
 
     @FindBy(xpath = "//div[@class = 'eBFwI']")
@@ -90,6 +90,7 @@ public class GoogleFormPage {
     
     public void selectPronoun(String pronoun) {
         Wrappers.clickOnElement(driver, dropDownbtn);
+        WaitUtils.sleep(1000);
         Wrappers.selectFromList(driver, pronaunList, pronoun);
 
     }
